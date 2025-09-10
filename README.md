@@ -7,7 +7,7 @@ Before you begin creating an application with this `devfile` code sample, it's h
 * [Go `devfile.yaml`](./devfile.yaml)
 * [Go `Dockerfile`](./docker/Dockerfile)
 
-1. The `devfile.yaml` file has an [`image-build` component](./devfile.yaml#L19-L25) that points to your `Dockerfile`.
+1. The `devfile.yaml` file has an [`image-build` component](./devfile.yaml#L19-L25) that points to your `Dockerfile`. 
 2. The [`docker/Dockerfile`](./docker/Dockerfile) contains the instructions you need to build the code sample as a container image.
 3. The `devfile.yaml` [`kubernetes-deploy` component](./devfile.yaml#L26-L38) points to a `deploy.yaml` file that contains instructions for deploying the built container image.
 4. The `devfile.yaml` [`deploy` command](./devfile.yaml#L40-L53) completes the [outerloop](https://devfile.io/docs/2.2.0/innerloop-vs-outerloop) deployment phase by pointing to the `image-build` and `kubernetes-deploy` components to create your application.
